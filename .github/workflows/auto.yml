@@ -3,7 +3,8 @@ name: Auto
 on:
   schedule:
     - cron: "30 01 * * *" # 北京时间上午09:30
-  workflow_dispatch:
+    - cron: "30 13 * * *" # 美国东部时间上午9:30
+  workflow_dispatch: 
 
 env:
   DIFY_TOKENS: ${{ secrets.DIFY_TOKENS }}
